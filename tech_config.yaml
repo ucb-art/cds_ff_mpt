@@ -1,0 +1,81 @@
+# the Technology class.
+class: "templates_cds_ff_mpt.tech.TechInfoCDSFFMPT"
+
+# layout related parameters
+layout:
+  # default EM spec calculation settings
+  em:
+    # DC current temperature
+    dc_temp: !!int 70
+    # RMS current allowable temperature increase
+    rms_dt: !!int 10
+
+  # MOM cap parameters
+  mom_cap:
+    standard:
+      # width/spacing dictionary
+      width_space:
+        1: [0.040, 0.050]
+        2: [0.040, 0.050]
+        3: [0.040, 0.050]
+        4: [0.060, 0.060]
+        5: [0.080, 0.100]
+        6: [0.080, 0.100]
+        7: [0.080, 0.100]
+        8: [0.080, 0.100]
+      margins:
+        1: 0.1
+        2: 0.1
+        3: 0.1
+        4: 0.1
+        5: 0.1
+        6: 0.1
+        7: 0.1
+        8: 0.1
+      num_ports_on_edge:
+        1: 1
+        2: 1
+        3: 1
+        4: 1
+        5: 1
+        6: 1
+        7: 1
+        8: 1
+      port_widths_default:
+        1: 1
+        2: 1
+        3: 1
+        4: 1
+        5: 1
+        6: 1
+        7: 1
+        8: 1
+
+# transistor technology parameters
+mos:
+  # the transistor width minimum resolution.
+  width_resolution: !!float 1
+  # the transistor length minimum resolution.
+  length_resolution: !!float 1e-9
+
+# metal resistor technology parameters
+res_metal:
+  # library name
+  lib_name: cds_ff_mpt
+  # length parameter name
+  l_name: l
+  # width parameter name
+  w_name: w
+  layer_name: layerName
+  # layer to cell name mapping:
+  cell_table:
+    1: M1
+    2: M2
+    3: M3
+    4: M4
+    5: M5
+    6: M6
+    7: M7
+    8: M8
+  # other parameter values
+  others: {}

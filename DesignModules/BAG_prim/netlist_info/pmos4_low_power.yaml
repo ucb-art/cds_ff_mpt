@@ -1,0 +1,40 @@
+lib_name: BAG_prim
+cell_name: pmos4_low_power
+pins: [ "D", "G", "S", "B" ]
+instances:
+  N0:
+    lib_name: cds_ff_mpt
+    cell_name: p1hvt
+    instpins:
+      B:
+        direction: inputOutput
+        net_name: "B"
+        num_bits: 1
+      S:
+        direction: inputOutput
+        net_name: "S"
+        num_bits: 1
+      G:
+        direction: inputOutput
+        net_name: "G"
+        num_bits: 1
+      D:
+        direction: inputOutput
+        net_name: "D"
+        num_bits: 1
+  B:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  S:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  G:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  D:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}

@@ -1,0 +1,33 @@
+impl_lib: 'AAAFOO_TEST_MOMCAP'
+impl_cell: 'MOMCAP'
+sch_lib: 'bag_analog_ec'
+sch_cell: 'cap_mom'
+
+routing_grid:
+  layers: [1, 2, 3, 4, 5, 6, 7]
+  spaces: [0.050, 0.050, 0.050, 0.060, 0.100, 0.100, 0.100]
+  widths: [0.040, 0.040, 0.040, 0.060, 0.080, 0.080, 0.080]
+  bot_dir: 'y'
+
+params:
+  cap_params:
+    bot_layer: 2
+    top_layer: 5
+    width: 11400
+    height: 5000
+    margin: 0
+    port_tr_w: 2
+    show_pins: True
+    options: !!null
+    fill_dummy: False
+    fill_pitch: 6
+    mos_type: 'nch'
+    threshold: 'lvt'
+    half_blk_x: True
+    half_blk_y: True
+  sub_lch: 18.0e-9
+  sub_w: 4
+  sub_type: 'ptap'
+  threshold: 'standard'
+  sub_tr_w: 2
+  show_pins: True
