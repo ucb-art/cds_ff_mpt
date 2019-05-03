@@ -67,6 +67,8 @@ git add -f template_libs.def
 
 # link test specifications
 ln -s ${TECH_DIR}/specs_test .
+ln -s ${TECH_DIR}/specs_demo .
+ln -s ${TECH_DIR}/specs_char .
 git add specs_test
 
 # copy over transistor characterization examples
