@@ -99,3 +99,5 @@ ddsOpenLibManager()
 
 printf("END OF CUSTOM CONFIG SETTINGS\n")
 
+; Start bag
+load("start_bag.il")
