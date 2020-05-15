@@ -6,11 +6,12 @@ export SPECTRE_DEFAULTS=-E
 export CDS_Netlisting_Mode="Analog"
 
 # setup virtuoso
-export CDS_INST_DIR=/tools/cadence/ICADV/ICADV123
+export CDS_INST_DIR=/tools/cadence/ICADVM/ICADVM181
+export SPECTRE_HOME=/tools/cadence/SPECTRE/SPECTRE191
 export MMSIM_HOME=/tools/cadence/MMSIM/MMSIM151
 export CDSHOME=$CDS_INST_DIR
 export PVSHOME=/tools/cadence/PVS/PVS151
-export QRC_HOME=/tools/cadence/EXT/EXT151
+export QRC_HOME=/tools/cadence/EXT/EXT191_ISR3
 export IUSHOME=/tools/cadence/INCISIV/INCISIVE152
 export AMSHOME=$IUSHOME
 
@@ -20,6 +21,7 @@ export PATH="${PVSHOME}/tools/bin:${PATH}"
 export PATH="${CDS_INST_DIR}/tools/plot/bin:${PATH}"
 export PATH="${CDS_INST_DIR}/tools/dfII/bin:${PATH}"
 export PATH="${CDS_INST_DIR}/tools/bin:${PATH}"
+export PATH="${SPECTRE_HOME}/tools/bin:${PATH}"
 export PATH="${MMSIM_HOME}/tools/bin:${PATH}"
 
 ### Setup BAG
