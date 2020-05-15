@@ -5,9 +5,9 @@ setenv BAG_WORK_DIR `pwd`
 # set BAG framework directory
 setenv BAG_FRAMEWORK "$BAG_WORK_DIR/BAG_framework"
 # set BAG python executable
-setenv BAG_PYTHON "/tools/projects/erichang/programs/anaconda3d6/bin/python"
+setenv BAG_PYTHON "/tools/B/ayan_biswas/programs/anaconda3d7/bin/python"
 # set jupyter notebook path
-setenv BAG_JUPYTER "/tools/projects/erichang/programs/anaconda3d6/bin/jupyter-notebook"
+setenv BAG_JUPYTER "/tools/B/ayan_biswas/programs/anaconda3d7/bin/jupyter-notebook"
 # set technology/project configuration directory
 setenv BAG_TECH_CONFIG_DIR "$BAG_WORK_DIR/cds_ff_mpt"
 # set where BAG saves temporary files

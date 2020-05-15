@@ -1,0 +1,53 @@
+capacitance:
+  decoupling_factor: 1.0
+  ground_net: "VSS"
+  
+distributed_processing:
+  multi_cpu: 6
+
+extract:
+  selection: "all"
+  type: "rc_coupled"
+
+extraction_setup:
+  array_vias_spacing: "auto"
+  max_fracture_length: "infinite"
+  max_fracture_length_unit: "MICRONS"
+  max_via_array_size: "auto"
+  net_name_space: "SCHEMATIC"
+
+filter_cap:
+  exclude_self_cap: "true"
+
+filter_coupling_cap:
+  coupling_cap_threshold_absolute: 0.01
+  coupling_cap_threshold_relative: 0.005
+
+filter_res:
+  min_res: 0.1
+
+input_db:
+  type: "pvs"
+  format: "DFII"
+
+output_db:
+  type: "extracted_view"
+  cap_component: "pcapacitor"
+  cap_property_name: "c"
+  enable_cellview_check: "true"
+  device_finger_delimiter: "@"
+  include_cap_model: "false"
+  include_parasitic_cap_model: "false"
+  include_res_model: "false"
+  include_parasitic_res_model: "false"
+  res_component: "presistor"
+  res_property_name: "r"
+  view_name: "av_extracted"
+
+output_setup: {}
+
+process_technology:
+  technology_corner: "typical"
+  technology_library_file: "/tools/cadence/GPDK/cds_ff_mpt_v_0.5/pvtech.lib"
+  technology_name: "cds_ff_mpt_qrc"
+  temperature: 25.0

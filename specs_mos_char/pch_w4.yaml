@@ -3,27 +3,27 @@ dut_cell: 'mos_analogbase'
 layout_package: 'abs_templates_ec.mos_char'
 layout_class: 'Transistor'
 
-impl_lib: 'AAAFOO_MOSCHAR_NCH'
-dsn_basename: 'MOS_NCH'
+impl_lib: 'AAAFOO_MOSCHAR_PCH'
+dsn_basename: 'MOS_PCH'
 
 rcx_params: {}
-view_name: 'schematic'
+view_name: 'netlist'
 
-root_dir: 'demo_data/mos_char_nch'
+root_dir: 'demo_data/mos_char_pch'
 summary_fname: 'summary.yaml'
 
 routing_grid:
-  layers: [4, 5]
-  spaces: [0.1, 0.1]
-  widths: [0.1, 0.1]
+  layers: [4, 5, 6, 7]
+  spaces: [0.060, 0.100, 0.100, 0.100]
+  widths: [0.060, 0.080, 0.080, 0.080]
   bot_dir: 'x'
 
 sweep_params:
   intent: ['standard']
 
 layout_params:
-  mos_type: 'nch'
-  lch: !!float 18e-9
+  mos_type: 'pch'
+  lch: 18.0e-9
   w: 4
   fg: 20
   intent: 'standard'
@@ -50,7 +50,7 @@ measurements:
     meas_package: 'verification.mos.sim'
     meas_class: 'MOSCharSS'
     out_fname: 'mos_ss.yaml'
-    is_nmos: True
+    is_nmos: False
     fg: 20
     testbenches:
       ibias:

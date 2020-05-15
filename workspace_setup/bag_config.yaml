@@ -73,9 +73,6 @@ database:
       capacitance:
         # substrate name for capacitance extraction
         ground_net: "VSS"
-      process_technology:
-        # QRC technology library file
-        technology_library_file: "${BAG_TECH_CONFIG_DIR}/pvs_setup/pvtech.lib"
   # calibreview generation setting
   calibreview:
     # the calibreview cell map file.
