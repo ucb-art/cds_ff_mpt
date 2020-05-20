@@ -174,7 +174,7 @@ pcDefinePCell(
     list( ddGetObj("BAG_prim") "nmos4_18" "schematic" "schematic")
     ((w string "4")
      (l string "18n")
-     (nf string "1")
+     (nf string "2")
     )
     let((inst iopin_master io_net io_pin)
         inst = dbCreateParamInstByMasterName( pcCellView "cds_ff_mpt" "n2svt" "symbol"
@@ -378,7 +378,7 @@ pcDefinePCell(
     list( ddGetObj("BAG_prim") "pmos4_lvt" "schematic" "schematic")
     ((w string "4")
      (l string "18n")
-     (nf string "21")
+     (nf string "2")
     )
     let((inst iopin_master io_net io_pin)
         inst = dbCreateParamInstByMasterName( pcCellView "cds_ff_mpt" "p1lvt" "symbol"
@@ -412,7 +412,7 @@ pcDefinePCell(
     list( ddGetObj("BAG_prim") "pmos4_18" "schematic" "schematic")
     ((w string "4")
      (l string "18n")
-     (nf string "1")
+     (nf string "2")
     )
     let((inst iopin_master io_net io_pin)
         inst = dbCreateParamInstByMasterName( pcCellView "cds_ff_mpt" "p1svt" "symbol"

@@ -3,13 +3,13 @@ dut_cell: 'mos_analogbase'
 layout_package: 'abs_templates_ec.mos_char'
 layout_class: 'Transistor'
 
-impl_lib: 'AAAFOO_MOSCHAR_PCH'
+impl_lib: 'AAAFOO_MOSCHAR_PCH_LVT'
 dsn_basename: 'MOS_PCH'
 
 rcx_params: {}
 view_name: 'netlist'
 
-root_dir: 'demo_data/mos_char_pch'
+root_dir: 'demo_data/mos_char_pch_lvt'
 summary_fname: 'summary.yaml'
 
 routing_grid:
@@ -19,14 +19,14 @@ routing_grid:
   bot_dir: 'x'
 
 sweep_params:
-  intent: ['standard']
+  intent: ['lvt']
 
 layout_params:
   mos_type: 'pch'
   lch: 18.0e-9
   w: 4
   fg: 20
-  intent: 'standard'
+  intent: 'lvt'
   fg_dum: 4
   stack: 1
   ptap_w: 6
